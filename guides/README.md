@@ -63,3 +63,9 @@
 ### Cleaning up the `/dist` folder
 
 使用 [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin) 清理 `/dist` 文件夹，需要注意的是，clean-webpack-plugin 从 2.0 版本开始自动识别 webpack 的输出配置，无需再指定清理位置。
+
+### The Manifest
+
+插件可以通过获取 webpack 输出的 manifest 来获取生成的文件清单。
+
+可以使用 [WebpackManifestPlugin](https://github.com/danethurber/webpack-manifest-plugin) 来获取 json 格式的 manifest。
