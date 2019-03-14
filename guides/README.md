@@ -23,3 +23,10 @@
 
 ### Setup
 
+### Loading CSS
+
+安装：
+- [style-loader](https://webpack.js.org/loaders/style-loader/): Adds CSS to the DOM by injecting a `<style>` tag
+- [css-loader](https://webpack.js.org/loaders/css-loader/):The `css-loader` interprets `@import` and `url()` like `import/require()` and will resolve them.
+
+生产环境还需要考虑压缩问题：[minimize css](https://webpack.js.org/guides/asset-management/)
