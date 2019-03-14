@@ -30,3 +30,7 @@
 - [css-loader](https://webpack.js.org/loaders/css-loader/):The `css-loader` interprets `@import` and `url()` like `import/require()` and will resolve them.
 
 生产环境还需要考虑压缩问题：[minimize css](https://webpack.js.org/guides/asset-management/)
+
+### Loading Images
+
+安装 [file-loader](https://webpack.js.org/loaders/file-loader/)
