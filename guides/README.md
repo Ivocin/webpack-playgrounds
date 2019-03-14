@@ -60,4 +60,6 @@
 这块的例子不太好，因为 `index.js` 文件已经 `import` 了 `print.js` 文件，所以 `app.bundle.js` 文件里已经包含了 `print.js` 的内容，`print.bundle.js` 就多余了。
 
 
+### Cleaning up the `/dist` folder
 
+使用 [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin) 清理 `/dist` 文件夹，需要注意的是，clean-webpack-plugin 从 2.0 版本开始自动识别 webpack 的输出配置，无需再指定清理位置。
