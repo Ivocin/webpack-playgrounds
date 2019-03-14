@@ -46,3 +46,9 @@
 
 - [csv-loader](https://github.com/theplatapi/csv-loader) 
 - [xml-loader](https://github.com/gisikw/xml-loader)
+
+## Output Management
+
+### Preparation
+
+多入口，输出文件名使用 `[name]` 指定，`[name]` 即为 entry point 的名称。
