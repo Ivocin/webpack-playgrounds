@@ -13,3 +13,7 @@
 ### Using a Configuration
 
 `webpack` 命令会默认读取 `webpack.config.js` 文件，如果需要加载其他文件名，使用 `--config` 选项。
+
+### NPM Scripts
+
+使用 [npm scripts](https://docs.npmjs.com/misc/scripts) 可以不用在命令行输入 `npx webpack` 命令
