@@ -52,3 +52,12 @@
 ### Preparation
 
 多入口，输出文件名使用 `[name]` 指定，`[name]` 即为 entry point 的名称。
+
+### Setting up HtmlWebpackPlugin
+
+使用 [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/) 自动生成 html 文件，默认输出 `dist/index.html`。
+
+这块的例子不太好，因为 `index.js` 文件已经 `import` 了 `print.js` 文件，所以 `app.bundle.js` 文件里已经包含了 `print.js` 的内容，`print.bundle.js` 就多余了。
+
+
+
