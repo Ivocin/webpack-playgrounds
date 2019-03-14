@@ -39,3 +39,10 @@
 
 注意 `ttf` 文件的 `format` 为 `truetype`
 奇怪的一点是，在 Chrome Dev Tools 的 Source 中没有 ttf 文件，Network 里面有。
+
+### Loading Data
+
+默认支持 JSON 类型文件，CSV 、TSV 、XML 需要安装对应 loader：
+
+- [csv-loader](https://github.com/theplatapi/csv-loader) 
+- [xml-loader](https://github.com/gisikw/xml-loader)
