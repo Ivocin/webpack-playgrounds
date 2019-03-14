@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 'Do Hyeon';
+  src: url('./my-font.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 .hello {
   color: red;
   background: url('./icon.svg');
+  font-family: "Do Hyeon";
 }

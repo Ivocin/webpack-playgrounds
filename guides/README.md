@@ -34,3 +34,8 @@
 ### Loading Images
 
 安装 [file-loader](https://webpack.js.org/loaders/file-loader/)
+
+### Loading Fonts
+
+注意 `ttf` 文件的 `format` 为 `truetype`
+奇怪的一点是，在 Chrome Dev Tools 的 Source 中没有 ttf 文件，Network 里面有。
