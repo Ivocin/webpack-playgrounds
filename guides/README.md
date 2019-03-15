@@ -127,3 +127,9 @@
 > ℹ ｢wds｣: Content not from webpack is served from ./test
 
 从中可以看出，不是通过 webpck 输出的内容由 `./test` 文件夹决定，为了验证这点，浏览器输入 `http://localhost:8081/test.svg` 可以看到，没有被 webpack 处理的 `test.svg` 图片也被 served 到了 `/` 路径下。
+
+#### Using webpack-dev-middleware
+
+webpack-dev-middleware 作用是将 webpack 输出的文件发送到服务器上。webpack-dev-server 里面就使用了 webpack-dev-middleware + express。
+我们也使用 webpack-dev-middleware + express，更灵活的定义我们自己的 webpack-dev-server。
+
