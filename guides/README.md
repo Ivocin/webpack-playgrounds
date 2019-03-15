@@ -78,3 +78,19 @@
 > The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
 > 
 >You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+
+### Using source maps
+
+为什么要使用 source maps，因为 webpack 打成一个包之后，若其中一个 js 文件报错，错误只能定位到这个打好的包上，而无法精确定位是哪一个没打包之前的 js 报错。使用 [source maps](https://blog.teamtreehouse.com/introduction-source-maps) 可以精确定位错误来源。
+
+[devtool](https://webpack.js.org/configuration/devtool/) 配置可以配置使用 source maps 生成的不同形式。
+
+未使用 source maps：
+> Uncaught ReferenceError: cosnole is not defined
+>    at HTMLButtonElement.printMe (VM24 print.js:4)
+
+使用了 source maps：
+> Uncaught ReferenceError: cosnole is not defined
+>    at HTMLButtonElement.printMe (print.js:2)
+
+发现 Chrome 在未使用 source maps 的情况下，也能找到对应文件。
