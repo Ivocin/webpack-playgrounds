@@ -101,3 +101,7 @@
 - webpack's Watch Mode
 - webpack-dev-server
 - webpack-dev-middleware
+
+#### Using Watch Mode
+
+使用 `webpack --watch` 命令进入 watch mode，可以实现自动编译，唯一的问题是，每次都需要手动刷新浏览器。
