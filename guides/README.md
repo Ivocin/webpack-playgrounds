@@ -69,3 +69,12 @@
 插件可以通过获取 webpack 输出的 manifest 来获取生成的文件清单。
 
 可以使用 [WebpackManifestPlugin](https://github.com/danethurber/webpack-manifest-plugin) 来获取 json 格式的 manifest。
+
+## Development
+
+[mode](https://webpack.js.org/concepts/mode/)：webpack 4 新增，用来执行 webpack 内置的优化命令。合法值为 `none`、`development` 和 `production`，若不设置，执行 webpack 命令会有如下警告，并且会按照 `production` 执行：
+> WARNING in configuration
+>
+> The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+> 
+>You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
