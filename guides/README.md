@@ -94,3 +94,10 @@
 >    at HTMLButtonElement.printMe (print.js:2)
 
 发现 Chrome 在未使用 source maps 的情况下，也能找到对应文件。
+
+### Choosing a Development Tool
+
+需要自动编译，而不是每次修改都要执行 `npm run build` 命令。主要有以下三种方式实现自动编译：
+- webpack's Watch Mode
+- webpack-dev-server
+- webpack-dev-middleware
