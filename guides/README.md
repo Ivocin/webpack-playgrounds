@@ -105,3 +105,25 @@
 #### Using Watch Mode
 
 使用 `webpack --watch` 命令进入 watch mode，可以实现自动编译，唯一的问题是，每次都需要手动刷新浏览器。
+
+#### Using webpack-dev-server
+
+[webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+
+这里理解一下 devServer 的配置项 contentBase 的含义，和 publicPath 的区别
+
+如下配置：
+
+```
+  devServer: {
+    contentBase: './test'
+  },
+```
+
+启动 webpack-dev-server 后，终端打印如下：
+
+> ℹ ｢wds｣: Project is running at http://localhost:8081/
+> ℹ ｢wds｣: webpack output is served from /
+> ℹ ｢wds｣: Content not from webpack is served from ./test
+
+从中可以看出，不是通过 webpck 输出的内容由 `./test` 文件夹决定，为了验证这点，浏览器输入 `http://localhost:8081/test.svg` 可以看到，没有被 webpack 处理的 `test.svg` 图片也被 served 到了 `/` 路径下。
