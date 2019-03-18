@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from 'antd/lib/button';
-import "antd/dist/antd.css";
+import { Button } from 'antd';
 import "./App.css"
 const App = (props) => {
   return (
